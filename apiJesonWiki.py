@@ -1,7 +1,7 @@
 import requests
 import json
 
-api_url = 'https://pl.wikipedia.org/w/api.php'
+# api_url = 'https://pl.wikipedia.org/w/api.php'
 
 params = {
     'action': 'query',
@@ -11,15 +11,15 @@ params = {
     'titles': 'Apple'
 }
 
-response = requests.get(api_url, params=params)
+response = requests.get(params=params)
 data = response.json()
 
 pageid = list(data['query']['pages'].keys())[0]
 image_url = data['query']['pages'][pageid]
-# ['original']['source']
+
 
 print(image_url)
-print(data)
+# print(data)
 
 result = {
     "id": 15,
