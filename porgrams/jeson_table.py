@@ -15,21 +15,23 @@ results = []
 elements = os.listdir(path)
 Foldet_elements = len(elements)
 
-
-for filename in os.listdir(path):
-    for file in elements:
+for file in elements:
         filename = os.path.splitext(file)[0]
         filenames.append(filename)
 
-    print(filenames)
+for filename in os.listdir(path):
+   
+
+    # print(filenames)
    
     randoms=random.randint(0, 3)
     random_elements =  random.sample(filenames, 4) 
-    clean_name = random_elements[randoms]
+    print(random_elements)
+    
 
     result = [{
         "id": index,
-        'question': 'lib/logoPng/'+clean_name + '.png',
+        'question': 'lib/logoPng/' + random_elements[randoms]+ '.png',
         'options':  random_elements,
         'answer_index': randoms,
     }]
