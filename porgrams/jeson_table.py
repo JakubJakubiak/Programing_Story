@@ -20,11 +20,16 @@ for file in os.listdir(path):
 for filename in os.listdir(path):
     randoms = random.randint(0, 3)
     random_elements = random.sample(filenames, 4)
+    random_elements[randoms] = filenames[index]
+
+    print(randoms)
+    print(randoms)
     print(random_elements)
+    print(filenames)
 
     result = [{
         "id": index,
-        'question': 'lib/logoPng/' + random_elements[randoms] + '.png',
+        'question': 'lib/logoPng/' + filenames[index] + '.png',
         'options':  random_elements,
         'answer_index': randoms,
     }]
