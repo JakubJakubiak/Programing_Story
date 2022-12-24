@@ -58,6 +58,10 @@ for index, (filename, file_extension) in enumerate(filenames):
     # Wstaw poprawną odpowiedź do listy opcji
     options.insert(answer_index, filename)
 
+    # Zmień pierwszą literę na dużą w każdej opcji odpowiedzi
+    # optionsLow = options
+    options = [option.capitalize() for option in options]
+
     result = {
         "id": index,
         'question': f'lib/logoPng/{filename}{file_extension}',
