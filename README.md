@@ -12,3 +12,6 @@ https://github.com/JakubJakubiak/Super_Jump
 Wiki_Tinder 
 https://github.com/JakubJakubiak/Wiki_Tinder
 ![photo](https://raw.githubusercontent.com/JakubJakubiak/jakub-jakubiak-blog/master/src/images/Reactnativeexpo.jpg)
+
+Automatic-Tiktok-editing
+https://github.com/JakubJakubiak/Automatic-Tiktok-editing
