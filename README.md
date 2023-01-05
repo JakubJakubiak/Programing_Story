@@ -17,11 +17,11 @@ https://github.com/JakubJakubiak/Wiki_Tinder
 ![photo](https://raw.githubusercontent.com/JakubJakubiak/jakub-jakubiak-blog/master/src/images/Reactnativeexpo.jpg)
 
 
-Tiktok-editing 
+Tiktok-Editing 
 
 https://github.com/JakubJakubiak/Automatic-Tiktok-editing/blob/main/EditVideo.py
 
 
-Alert Crypto Bot
+Alert_Crypto_Bot
 
 https://github.com/JakubJakubiak/AlertApiBot
