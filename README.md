@@ -20,3 +20,7 @@ https://github.com/JakubJakubiak/Wiki_Tinder
 Tiktok-editing 
 
 https://github.com/JakubJakubiak/Automatic-Tiktok-editing/blob/main/EditVideo.py
+
+
+Alert Crypto Bot
+https://github.com/JakubJakubiak/AlertApiBot
