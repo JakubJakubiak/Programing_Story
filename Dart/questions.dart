@@ -7,7 +7,6 @@ import 'package:flutter/services.dart';
 
 import './module/ad_bob_service.dart';
 import 'package:google_mobile_ads/google_mobile_ads.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 import 'questionsAll/ques_tions.dart';
 
 void main() async {
@@ -53,6 +52,7 @@ class _MyHomePageState extends State<MyHomePage>
   int highscore = 0;
   List<int> uniqueNumbers = [];
 
+  Animation<double>? animation;
   late Timer timer;
   double posValue = 0.0;
   double posValueHeight = 0.0;
@@ -194,8 +194,6 @@ class _MyHomePageState extends State<MyHomePage>
       _counter = 0;
     });
   }
-
-  Animation<double>? animation;
 
   @override
   void initState() {
