@@ -28,7 +28,7 @@ async def main():
         file_name = f"image_{i+1}_{url.split('/')[-1]}"   
         
         if os.path.exists(os.path.join("png", file_name)):
-            print(f"Obraz {file_name} już istnieje.")
+            print(f"Image {file_name} already exists.")
         else:
             task = asyncio.ensure_future(download_image(url, file_name))
             tasks.append(task)
