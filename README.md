@@ -5,7 +5,7 @@ A collection of the most important projects in one place
 
 https://play.google.com/store/apps/details?id=com.night.multimindbot
 
-![photo](https://play-lh.googleusercontent.com/-WZofHSZ1X-CON8g-ZAOagOrStGFWACxdmqpj1xlo8bTIpJmd1TiUO5PSkgkLBkWZFfU=w2560-h1440-rw=w2560-h1440-rw)
+![photo](https://play-lh.googleusercontent.com/-WZofHSZ1X-CON8g-ZAOagOrStGFWACxdmqpj1xlo8bTIpJmd1TiUO5PSkgkLBkWZFfU=w2560-h1440-rw)
 
 
 
