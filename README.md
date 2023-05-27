@@ -9,6 +9,7 @@ https://play.google.com/store/apps/details?id=com.night.multimindbot
 
 
 https://play.google.com/store/apps/details?id=inu.night.humanAI
+
 ![photo](https://play-lh.googleusercontent.com/1_pIdn7seSMs1cliQVh6t69AGAT7xJxYWGOeH54x1zKfSz8snSyZmN43CNDuXbh-RjjH=w2560-h1440-rw)
 
 
