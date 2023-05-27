@@ -2,6 +2,13 @@
 
 A collection of the most important projects in one place
 
+
+https://play.google.com/store/apps/details?id=com.night.multimindbot
+
+![photo](https://play-lh.googleusercontent.com/-WZofHSZ1X-CON8g-ZAOagOrStGFWACxdmqpj1xlo8bTIpJmd1TiUO5PSkgkLBkWZFfU=w2560-h1440-rw)
+
+
+
 https://play.google.com/store/apps/details?id=inu.night.qizelogo
 
 ![photo](https://play-lh.googleusercontent.com/G6syde95yo0-gbNl-nX51K_TW-JRjTgIHCEj2WVA73vleSFSqQblAUPC-CShtrR5IA=w2560-h1440-rw)
