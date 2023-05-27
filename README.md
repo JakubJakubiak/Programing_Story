@@ -8,6 +8,9 @@ https://play.google.com/store/apps/details?id=com.night.multimindbot
 ![photo](https://play-lh.googleusercontent.com/-WZofHSZ1X-CON8g-ZAOagOrStGFWACxdmqpj1xlo8bTIpJmd1TiUO5PSkgkLBkWZFfU=w2560-h1440-rw)
 
 
+https://play.google.com/store/apps/details?id=inu.night.humanAI
+![photo](https://play-lh.googleusercontent.com/1_pIdn7seSMs1cliQVh6t69AGAT7xJxYWGOeH54x1zKfSz8snSyZmN43CNDuXbh-RjjH=w2560-h1440-rw)
+
 
 https://play.google.com/store/apps/details?id=inu.night.qizelogo
 
