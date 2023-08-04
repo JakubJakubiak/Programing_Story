@@ -25,13 +25,13 @@ Super_Jump uniti game
 
 https://github.com/JakubJakubiak/Super_Jump
 
-![photo](https://raw.githubusercontent.com/JakubJakubiak/jakub-jakubiak-blog/master/src/images/super_jump.jpg)
+![photo](https://raw.githubusercontent.com/JakubJakubiak/Programing_Story/main/png/super_jump.jpg)
 
 Wiki_Tinder 
 
 https://github.com/JakubJakubiak/Wiki_Tinder
 
-![photo](https://raw.githubusercontent.com/JakubJakubiak/jakub-jakubiak-blog/master/src/images/Reactnativeexpo.jpg)
+![photo](https://raw.githubusercontent.com/JakubJakubiak/Programing_Story/main/png/Reactnativeexpo.jpg)
 
 
 Tiktok-Editing 
