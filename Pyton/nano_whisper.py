@@ -22,7 +22,7 @@ def main():
         end_time = format_srt_time(segment["end"])
         text = segment["text"]
         
-        transcriptions.append(f"{i+1}\n{start_time} --> {end_time}\n{text}")
+        transcriptions.append(f"{i+1}\n{start_time} --> {end_time}\n{text}\n")
     
         print(f"{i+1}")
         print(f"Start: {start_time}, End: {end_time}")
