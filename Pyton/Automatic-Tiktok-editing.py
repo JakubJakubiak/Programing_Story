@@ -26,9 +26,10 @@ for up_filename, down_filename in zip(up_filenames, down_filenames):
     
     # Resize the clips to 50% and arrange them vertically
     up_video = up_video.resize(height=up_video.h // 2, width=up_video.w)
-    down_video = down_video.resize(height=down_video.h , width=down_video.w)
+    down_video = down_video.resize(height=down_video.h //2 , width=down_video.w)
 
-    down_video = down_video.crop(x1=0, y1=80, x2=720, y2=550)
+    down_video = down_video.crop(x1=0, y1=100, x2=720, y2=550)
+    down_video = down_video.set_audio(None)
     
     
     combined = clips_array([[up_video], [down_video]])
