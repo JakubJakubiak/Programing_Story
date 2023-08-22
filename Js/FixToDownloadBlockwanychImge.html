@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Downloader</title>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.5/jszip.min.js"></script>
+</head>
+</head>
+<body>
+  <h1>Image Downloader</h1>
+    <button id="downloadButton">Pobierz wszystkie obrazy</button>
+  <div id="imageContainer"></div>
+
+
+  <script>
+    const imageContainer = document.getElementById('imageContainer');
+    const downloadButton = document.getElementById('downloadButton');
+	    fetchImages();
+    downloadButton.addEventListener('click', downloadImages);
+    const imageLinks = [
+	"https://cdn.midjourney.com/01a45139-fb91-4f77-964e-01bbc986386b/grid_0_640_N.webp",
+	"https://cdn.midjourney.com/8fe35e0b-1e97-4dd0-a8dc-3a71af392276/grid_0_640_N.webp",
+	"https://cdn.midjourney.com/930f00e8-741d-4194-b632-3fd3096f5afe/grid_0_640_N.webp",
+	"https://cdn.midjourney.com/daecc67d-7aad-4499-844f-7e481deb86fb/grid_0_640_N.webp",
+	"https://cdn.midjourney.com/15903e3b-1c5c-4829-b279-d6e1b7a715a9/grid_0_640_N.webp",
+	"https://cdn.midjourney.com/33ba0bcc-dd56-4d33-b409-3e3f0402fb1b/0_1_640_N.webp"
+
+    ];
+
+    async function fetchImages() {
+      imageLinks.forEach((link, index) => {
+        const img = document.createElement('img');
+        img.src = link;
+        img.alt = `Image ${index + 1}`;
+        imageContainer.appendChild(img);
+      });
+    }
+
+    async function downloadImages() {
+      let zip = new JSZip();
+      
+      const fetchPromises = imageLinks.map(async (link, index) => {
+        const response = await fetch(link);
+        const blob = await response.blob();
+        zip.file(`image_${index + 1}.webp`, blob);
+      });
+
+      Promise.all(fetchPromises).then(() => {
+        zip.generateAsync({ type: 'blob' }).then(blob => {
+          const a = document.createElement('a');
+          a.style.display = 'none';
+          a.href = URL.createObjectURL(blob);
+          a.download = 'images.zip';
+          document.body.appendChild(a);
+          a.click();
+          document.body.removeChild(a);
+		  console.log("dd")
+        });
+      });
+    }
+
+    fetchImages();
+    downloadButton.addEventListener('click', downloadImages);
+  </script>
+</body>
+</html>
