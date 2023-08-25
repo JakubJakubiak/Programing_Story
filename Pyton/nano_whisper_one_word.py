@@ -11,7 +11,7 @@ def format_srt_time(time):
 
 def main():
     model = whisper.load_model("base")
-    audio = whisper.load_audio("PRZEKLĘTY PACZKOMAT.webm")
+    audio = whisper.load_audio("Video.webm")
     output_path = 'output.srt'
 
     transcriptions = []
