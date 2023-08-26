@@ -10,28 +10,33 @@ def format_srt_time(time):
     return f"{hours:02d}:{minutes:02d}:{seconds:02d},{milliseconds:03d}"
 
 def main():
-    model = whisper.load_model("base")
-    audio = whisper.load_audio("Video.webm")
+    model = whisper.load_model("small")
+    audio = whisper.load_audio("video.webm")
     output_path = 'output.srt'
 
     transcriptions = []
-    resulty = model.transcribe(audio, fp16=False)
-
+    resulty = model.transcribe(audio, verbose=True)
+   
     for i, segment in enumerate(resulty["segments"]):
-        start_time = format_srt_time(segment["start"])
-        end_time = format_srt_time(segment["end"])
+        start_time = segment["start"]
+        end_time = segment["end"]
         words = segment["text"].split()
+        print(segment["text"])
 
-        line_start_time = segment["start"]
-        line_end_time = segment["start"] + (segment["end"] - segment["start"]) / len(words)
+        total_characters = sum(len(word) for word in words)
+        total_time = end_time - start_time
 
-        for j, word in enumerate(words):
+        line_start_time = start_time
+        line_end_time = start_time
+
+        for word in words:
+            word_time = (len(word) / total_characters) * total_time
+            line_end_time += word_time
             transcriptions.append(f"{i+1}\n{format_srt_time(line_start_time)} --> {format_srt_time(line_end_time)}\n{word}\n")
             line_start_time = line_end_time
-            line_end_time = segment["start"] + ((j + 2) * (segment["end"] - segment["start"]) / len(words))
 
         print(f"{i+1}")
-        print(f"Start: {start_time}, End: {end_time}")
+        print(f"Start: {format_srt_time(start_time)}, End: {format_srt_time(end_time)}")
         print(words)
         print("-" * 40)
 
